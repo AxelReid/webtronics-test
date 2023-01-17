@@ -12,8 +12,10 @@ const Contact = () => {
   });
 
   useEffect(() => {
-    const wait = setTimeout(() => setRes({ fail: false, msg: null }), 2500);
-    return () => clearTimeout(wait);
+    if (response.msg) {
+      const wait = setTimeout(() => setRes({ fail: false, msg: null }), 2500);
+      return () => clearTimeout(wait);
+    }
   }, [response]);
 
   const submit = async (e: FormEvent<HTMLFormElement>) => {
