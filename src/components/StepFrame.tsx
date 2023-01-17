@@ -15,7 +15,7 @@ const StepFrame = ({ className }: { className?: string }) => {
         height="191"
         rx="8"
         fill="white"
-        fill-opacity="0.05"
+        fillOpacity="0.05"
       />
       <rect
         x="0.5"
@@ -24,14 +24,14 @@ const StepFrame = ({ className }: { className?: string }) => {
         height="190"
         rx="7.5"
         stroke="url(#paint0_linear_1043_2)"
-        stroke-opacity="0.7"
+        strokeOpacity="0.7"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M472 5.84615H345V0H472C482.493 0 491 8.28847 491 18.5128V209.487C491 219.712 482.493 228 472 228H345V222.154H472C479.18 222.154 485 216.483 485 209.487V18.5128C485 11.5172 479.18 5.84615 472 5.84615Z"
         fill="url(#paint1_linear_1043_2)"
-        fill-opacity="0.7"
+        fillOpacity="0.7"
       />
       <defs>
         <linearGradient
@@ -42,8 +42,8 @@ const StepFrame = ({ className }: { className?: string }) => {
           y2="287.993"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#15BFFD" />
-          <stop offset="1" stop-color="#9C37FD" />
+          <stop stopColor="#15BFFD" />
+          <stop offset="1" stopColor="#9C37FD" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_1043_2"
@@ -53,9 +53,9 @@ const StepFrame = ({ className }: { className?: string }) => {
           y2="114"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.081934" stop-color="#15BFFD" stop-opacity="0" />
-          <stop offset="0.706057" stop-color="#15BFFD" />
-          <stop offset="1" stop-color="#9C37FD" />
+          <stop offset="0.081934" stopColor="#15BFFD" stopOpacity="0" />
+          <stop offset="0.706057" stopColor="#15BFFD" />
+          <stop offset="1" stopColor="#9C37FD" />
         </linearGradient>
       </defs>
     </svg>

@@ -36,7 +36,7 @@ const BoxFrame: React.FC<{ className?: string }> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
         >
           <stop stopColor="#15BFFD" />
-          <stop offset="1" stop-color="#9C37FD" />
+          <stop offset="1" stopColor="#9C37FD" />
         </linearGradient>
       </defs>
     </svg>

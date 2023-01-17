@@ -70,6 +70,6 @@ $linear-blue: linear-gradient($blue-lighter, $purple);
     @apply mx-auto w-[calc(100%-40px)] max-w-7xl scroll-mt-28;
   }
   .title {
-    @apply text-center font-clash text-5xl font-semibold md:text-7xl md:leading-tight;
+    @apply text-center font-clash text-5xl font-semibold leading-tight md:text-7xl md:leading-tight;
   }
 }
