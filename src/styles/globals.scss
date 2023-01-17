@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+$blue-light: #1ff2ff;
+$cyan-light: #27f9e5;
+$lime-light: #2fffcd;
+$blue-lighter: #15bffdb2;
+$purple: #9c37fdb2;
+$indigo-dark: #0c102d;
+$card-bg: rgb(37, 22, 60);
+
+$linear-cyan: linear-gradient(
+  180deg,
+  $blue-light 0%,
+  $cyan-light 52.66%,
+  $lime-light 100%
+);
+$linear-blue: linear-gradient($blue-lighter, $purple);
+
+@layer utilities {
+  // gradient border colors
+  .b-linear {
+    border: 1px solid transparent;
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+  }
+  .b-linear-blue {
+    @extend .b-linear;
+    background-image: linear-gradient($card-bg, $card-bg), $linear-blue;
+  }
+  // gradient background colors
+  .bg-linear-cyan {
+    background: $linear-cyan;
+  }
+  .footer-border {
+    border-top: 1px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to right, $blue-lighter, $purple);
+  }
+
+  .card {
+    clip-path: polygon(0 0, 100% 0, 100% 84%, 73% 100%, 0 100%);
+  }
+}
+
+@layer base {
+  body {
+    @apply overflow-x-hidden  bg-[#0C102D] text-white;
+  }
+  input {
+    @apply b-linear-blue relative rounded-lg border border-transparent
+    px-6 py-5 text-base text-[#a2cbfb] outline-none placeholder:text-[#A2CBFB];
+  }
+  button {
+    @apply bg-linear-cyan rounded-lg px-8 py-5 text-base font-medium text-[#0A1482] hover:text-[#3B48D0] active:text-white disabled:opacity-40;
+  }
+  a {
+    @apply hover:text-[#a2cbfb];
+    &:hover svg {
+      path {
+        @apply fill-[#a2cbfb];
+      }
+    }
+  }
+}
+
+@layer components {
+  .container {
+    @apply mx-auto w-[calc(100%-40px)] max-w-7xl scroll-mt-28;
+  }
+  .title {
+    @apply text-center font-clash text-5xl font-semibold md:text-7xl md:leading-tight;
+  }
+}
