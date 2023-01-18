@@ -1,4 +1,4 @@
-**To task giver: I didn't well understand what you meant about how to create the feedbacks part, so i did integrate the api to the contact form**
+**To task giver: I didn't well understand what you meant about how to create the feedbacks part because there is no feedbacks section in the design so i integrated the api to the contact form**
 
 ## Getting Started
 
